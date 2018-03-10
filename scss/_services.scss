@@ -1,4 +1,8 @@
 // Styling for the services section
-.service-box {
-  max-width: 400px;
+.service-circle {
+  border-radius: 50%;
+  border: 4px dashed $primary;
+  width: 200px;
+  height: 200px;
+  color: black;
 }

@@ -1,13 +1,28 @@
 // Styling for the masthead
 header.masthead {
+  position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url('../img/header.jpg');
   background-position: center center;
   @include background-cover;
+  .container::before {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+  }  
+  .title {
+    color: $primary;
+  }
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
+    border-color: white;
   }
   h1 {
     font-size: 2rem;
