@@ -236,16 +236,38 @@ section.about {
 }
 
 section.about .profile {
-  background-image: url("../img/profile.jpg");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: white;
+  /*
+    background-image: url('../img/profile.jpg');
+    background-position: center center;
+    @include background-cover;
+    padding: 22rem 0;
+    */
+}
+
+@media (min-width: 992px) {
+  section.about .profile {
+    background-image: url("../img/profile.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+section.about .profile .profile-circle {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+section.about .profile .profile-circle img {
+  width: 100%;
+  height: auto;
 }
 
 section.about .about-desc {
-  padding: 10rem;
+  padding: 8rem 0;
 }
 
 section.classes {

@@ -2,11 +2,28 @@
 section.about {
   padding: 0;
   .profile {
+    background-color: white;
+    /*
     background-image: url('../img/profile.jpg');
     background-position: center center;
     @include background-cover;
+    padding: 22rem 0;
+    */
+    @media (min-width: 992px) {
+      background-image: url('../img/profile.jpg');
+      background-position: center center;
+      @include background-cover;
+    }
+    .profile-circle {
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
   .about-desc {
-    padding : 10rem;
+    padding : 8rem 0;
   }
 }
