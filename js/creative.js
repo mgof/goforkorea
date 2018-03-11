@@ -41,11 +41,13 @@
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
-  sr.reveal('.sr-icons', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 200);
+  for(var i = 0; i < 6; ++i) {
+    sr.reveal('.sr-ani-' + i, {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px'
+    }, 200);
+  }
   sr.reveal('.sr-button', {
     duration: 1000,
     delay: 200

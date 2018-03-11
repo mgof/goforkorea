@@ -11,6 +11,22 @@
   color: black !important;
 }
 
+.border-primary {
+  border-color: $primary !important;
+}
+
+.border-white {
+  border-color: white !important;
+}
+
+.border-black {
+  border-color: black !important;
+}
+
+.border-grey {
+  border-color: grey !important;
+}
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -34,6 +50,7 @@
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+    //box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+    box-shadow: none !important;
   }
 }
