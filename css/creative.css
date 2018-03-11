@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -232,7 +232,7 @@ header.masthead p {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px) {
-  header.masthead h1 {
+  header.masthead .ie-mt {
     margin-top: 20vh;
   }
 }
@@ -286,7 +286,9 @@ section.about .about-desc {
   border: 4px dashed #6ACFE3;
   width: 200px;
   height: 200px;
-  color: black;
+  color: grey;
+  font-weight: 600;
+  font-size: 1.5rem;
   margin: 12px auto;
 }
 
@@ -353,6 +355,44 @@ section.about .about-desc {
   }
 }
 
+section.event {
+  background-image: url("../img/event.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.event h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Handlee', cursive;
+}
+
+section.event h2 {
+  font-size: 2rem;
+  font-family: 'Handlee', cursive;
+}
+
+@media (min-width: 992px) {
+  section.event h1 {
+    font-size: 4rem;
+  }
+  section.event h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.event h1 {
+    font-size: 5rem;
+  }
+  section.event h2 {
+    font-size: 4rem;
+  }
+}
+
 .footer {
   background-color: #6ACFE3;
   font-size: 0.8rem;
@@ -364,8 +404,12 @@ section.about .about-desc {
   color: #6ACFE3 !important;
 }
 
-.text-grey {
+.text-gray {
   color: gray !important;
+}
+
+.text-darkgray {
+  color: #495057 !important;
 }
 
 .text-black {
@@ -411,5 +455,19 @@ section.about .about-desc {
 }
 
 .btn-primary:active, .btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+  color: #6ACFE3;
+  background-color: #f2f2f2 !important;
+}
+
+.btn-white:active, .btn-white:focus {
   box-shadow: none !important;
 }
